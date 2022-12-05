@@ -1,0 +1,180 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+header div {
+    display: flex;
+    background: #999;
+    padding-left: 10%;
+    margin-bottom: 50px;
+}
+
+#contact {
+    position: absolute;
+    top: 10px;
+    left: 70%;
+    width: 30%;
+}
+
+#contact h3 {
+    position: absolute;
+    left: -2000px;
+}
+
+.contact {
+    display: flex;
+    width: 100%;
+    background: #000;
+}
+
+.contact a {
+    padding-left: 2px;
+    color: red;
+}
+
+.contact dt {
+    width: 110px;
+    background: red;
+    color: #fff;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    padding-inline: 10%;
+}
+
+.content section {
+    position: relative;
+    flex: 0 0 50%;
+    margin-bottom: 10px;
+}
+
+.content section h3 {
+    padding: 0 0 5px 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #b4b4b4;
+}
+
+.content section:not(:last-child):before {
+    content: ".";
+    font-size: 100px;
+    color: red;
+    position: absolute;
+    top: -73px;
+    left: -7px;
+}
+
+.content section h4, .experience-date-separator {
+    color: red;
+}
+
+.experience-type::after {
+    content: "@";
+    padding-left: 5px;
+}
+
+.experience-details {
+    color: #b4b4b4;
+}
+
+.content section p {
+    padding-right: 15px;
+}
+
+.skill {
+    background: #ccc;
+    margin-block: 5px;
+    padding: 5px;
+}
+
+.skills-secondary .skill {
+    opacity: .7;
+}
+
+.skill span {
+    display: inline-block;
+    background: red;
+    padding: 4px;
+    color: white;
+}
+
+.skills-primary::before {
+    content: "Main";
+}
+
+.skills-secondary::before {
+    content: "Other";
+    display: block;
+    margin-top: 15px;
+    opacity: 1;
+}
+
+[data-skill="5"] span {
+    width: 50%;
+}
+
+[data-skill="3"] span {
+    width: 30%;
+}
+
+[data-skill="1"] span {
+    width: 10%;
+}
+
+[data-skill="9"] span {
+    width: 90%;
+}
+
+[data-skill="7"] span {
+    width: 70%;
+}
+
+ul {
+    padding-left: 10px;
+    list-style-position: inside;
+ }
+
+ @media only screen and (max-width: 770px) {
+    #contact {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    
+    #contact h3 {
+        position: relative;
+        left: 0;
+    }
+
+    .content section::before {
+        content: ".";
+        font-size: 100px;
+        color: red;
+        position: absolute;
+        top: -73px;
+        left: -7px;
+    }
+    
+    .contact {
+        background: none;
+    }
+    
+    .content section {
+        flex: 0 0 100%;
+    }
+
+    header div {
+        display: block;
+    }
+
+    header h1, header figure {
+        margin: 0;
+        padding-bottom: 10px;
+    }
+ }
