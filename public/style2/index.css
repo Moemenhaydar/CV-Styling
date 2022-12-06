@@ -72,9 +72,6 @@ section>h3{
     display: flex;
     width: 100%;
 }
-.skills-primary>.skill{
-    font-size: 15px;
-}
 .skills-secondary>.skill{
     font-size: 10px;
 }
