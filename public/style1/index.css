@@ -19,7 +19,15 @@ header div {
     left: 70%;
     width: 30%;
 }
+figure img{
+    width: 100px;
+    height: 100px;
+}
 
+figure img:hover{
+    width: 150px;
+    height: 150px;
+}
 #contact h3 {
     position: absolute;
     left: -2000px;
